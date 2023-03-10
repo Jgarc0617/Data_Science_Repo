@@ -26,3 +26,9 @@ print(dis_list)
 
 
 # Generate a list of output values based on input values generated eariler without Numpy
+
+for i in range(10):
+    
+    weight.append(calories[i] * walk_pace[i] / net_value[i] * 1 / distance[i])
+    
+print(weight)
