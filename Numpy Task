@@ -1,0 +1,28 @@
+# Import random into your program
+
+import random
+
+# Formula: Weight Loss calculator: W = (C *S/N)*(1/distance)
+
+# Create four list for the corresponding letters
+
+cal_list = []
+net_list = []
+pace_list = []
+dis_list = []
+weight = ()
+
+# Generate ten random data points and append them to the lists that were created
+
+cal_list = random.sample(range(1, 30), 10)
+net_list = random.sample(range(1, 30), 10)
+pace_list = random.sample(range(1, 30), 10)
+dis_list = random.sample(range(1, 30), 10)
+
+print(cal_list)
+print(net_list)
+print(pace_list)
+print(dis_list)
+
+
+# Generate a list of output values based on input values generated eariler without Numpy
