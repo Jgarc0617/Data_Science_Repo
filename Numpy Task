@@ -27,8 +27,54 @@ print(dis_list)
 
 # Generate a list of output values based on input values generated eariler without Numpy
 
-for i in range(10):
+for i in range(len(calories)):
     
     weight.append(calories[i] * walk_pace[i] / net_value[i] * 1 / distance[i])
     
 print(weight)
+
+
+# Generate a numpy array of output values this time around
+
+np_calories = np.array(calories)
+np_net_value = np.array(net_value)
+np_walk_pace = np.array(walk_pace)
+np_distance = np.array(distance)
+
+weight = (np_calories * np_walk_pace / np_net_value) * 1 / np_distance
+
+print(weight)
+
+
+# Create a function which accepts all input variables as arguments and returns an output variable
+
+def total_loss(np_calories, np_walk_pace, np_net_value, np_distance):
+    
+    weight = (np_calories * np_walk_pace / np_net_value) * 1 / np_distance
+
+    return weight
+
+    total_loss(np_calories, np_walk_pace, np_net_value, np_distance)
+
+
+print(weight)
+
+# Get a numpy array of boolean values by testing different conditions 
+
+np_weight = np.array(weight)
+
+print(np_weight >= 3)
+
+
+# Generate a numpy array of all values that meet a specific condition
+
+weight_2 = np_weight[np_weight > 2]
+
+print(weight_2)
+
+# Determine the minimum or maximum value in your NumpyArray
+
+print(np.max(np_weight))
+
+print(np.min(np_weight))
+
