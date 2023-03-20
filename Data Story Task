@@ -1,0 +1,31 @@
+# Import pandas as pd, numpy as np and pyploy as plt from matplotlib
+
+import pandas as pd
+import numpy as np
+from matplotlib import pyplot as plt
+
+majors_data = pd.read_csv("college_majors.csv")
+
+print(majors_data)
+
+
+# The data set that I'll be analyzing are college majors from 2015 - 2019. 
+# The reason I chose this data set is to see the amount of people in which major they chose so I could research about it and decide which one I'll like to study. 
+# The data set contains 8 columns, each one representing different things.
+
+# Data Display
+
+# The code below will be used to display out a line plot of the data set I've chosen and then will be analyzed in great detail. 
+
+xpoints = np.array([0, 80000])
+ypoints = np.array([0, 50000])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+
+
+
+
+
+
+# Inferences and conclusions
